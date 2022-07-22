@@ -3,19 +3,29 @@
     padding: 20px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .login__title {
     font-size: 3em;
     color: #043730;
 }
 
 .odd-item {
-    padding: 0 20px;
+    padding: 0;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .recent-login__list {
     display: flex;
+}
+
+.recent-login__list > div:not(:last-child) {
+    margin-right: 16px;
 }
 
 .recent-login__title {
@@ -23,8 +33,16 @@
     font-weight: 400;
 }
 
+.link-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .link-list {
     list-style: none;
+    padding: 0;
+    margin: 0 70px;
 }
 
 .link-list a {
@@ -32,4 +50,66 @@
     color: #043730;
     font-size: 15px;
     font-weight: 500;
+}
+
+.help-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-center button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #f9a31e;
+    border-radius: 6px;
+}
+
+.help-center button svg {
+    fill: #fff;
+}
+
+.help-center a {
+    color: #043730;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.login__center {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    position: relative;
+}
+
+.login__center::before {
+    content: '';
+    width: 47%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    border: solid #333;
+    border-width: 0.3px;
+}
+
+.login__center::after {
+    content: '';
+    width: 47%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    border: solid #333;
+    border-width: 0.3px;
+}
+
+.login__center-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.login__bottom {
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 8px;
 }
