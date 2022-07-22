@@ -18,6 +18,9 @@ import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
 import * as OfflinePluginRuntime from 'offline-plugin/runtime';
 
+// Import global css
+import './global.css';
+
 // Import root app
 import App from 'containers/App';
 

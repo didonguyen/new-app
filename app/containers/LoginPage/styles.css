@@ -1,0 +1,35 @@
+.login {
+    background-color: #f4f1eb;
+    padding: 20px;
+}
+
+.login__title {
+    font-size: 3em;
+    color: #043730;
+}
+
+.odd-item {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-login__list {
+    display: flex;
+}
+
+.recent-login__title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.link-list {
+    list-style: none;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #043730;
+    font-size: 15px;
+    font-weight: 500;
+}

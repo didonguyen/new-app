@@ -75,8 +75,8 @@ module.exports = {
     'import/no-cycle': 1,
     'no-param-reassign': 1,
     indent: [
-      2,
-      2,
+      4,
+      4,
       {
         SwitchCase: 1,
       },
