@@ -4,7 +4,10 @@ import './styles.css';
 import UserCard from '../../components/UserCard';
 import AddMore from '../../components/UserCard/more';
 
+import { signInGoogle } from './googleAuth';
+
 export default function LoginPage() {
+
   return (
     <div className='login'>
       <div className='container'>
@@ -26,6 +29,7 @@ export default function LoginPage() {
               <ul className='link-list'>
                 <li><a href="">Sign up</a></li>
                 <li><a href="">Help</a></li>
+                <li><a onClick={() => signInGoogle()}>Sign In With Google</a></li>
               </ul>
             </div>
             <div className='help-center'>

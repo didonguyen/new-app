@@ -20,7 +20,6 @@ function App() {
   return (
     <div>
       <Switch>
-        {console.log(LoginPage)}
         <Route exact component={HomePage} path='/' />
         <Route component={LoginPage} path='/login' />
         {/* {routes.map(route => {
