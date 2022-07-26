@@ -1,4 +1,5 @@
 .login {
+    height: 100vh;
     background-color: #f4f1eb;
     padding: 20px;
 }
@@ -110,6 +111,117 @@
 
 .login__bottom {
     background-color: #fff;
-    padding: 32px;
+    padding: 40px;
     border-radius: 8px;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-input {
+    min-width: 300px;
+    padding: 12px 20px;
+    font-size: 12px;
+    border: solid 1px #333;
+    border-radius: 6px;
+}
+
+.form-input:first-child {
+    margin-right: 32px;
+}
+
+.form__container-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__checkbox {
+    display: flex;
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.form__checkbox input {
+    margin-right: 12px;
+}
+
+.form__checkbox label {
+    cursor: pointer;
+}
+
+.form__forgot-password {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #043730;
+    font-weight: 500;
+}
+
+.action-button-group {
+    margin-top: 20px;
+}
+
+.continue-access {
+    display: flex;
+    justify-content: center;
+}
+
+.continue-title {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    position: relative;
+    width: 400px;
+}
+
+.continue-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30%;
+    border: solid 1px #333;
+}
+
+.continue-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    border: solid 1px #333;
+}
+
+.login-group {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-group svg {
+    cursor: pointer;
+    width: 30px;
+}
+
+.login-group svg:not(:last-child) {
+    margin-right: 24px;
+}
+
+.privacy-title {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+}
+
+.privacy-title a {
+    text-decoration: none;
+    color: #043730;
 }
